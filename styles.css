@@ -5,17 +5,23 @@ body {
 h2 {
   text-transform: uppercase;
 }
+p {
+  font-weight: 900;
+}
+h4 {
+  font-size: 1.1em;
+}
 
 /* Header */
-header {
+.navbar {
   display: flex;
   justify-content: space-between;
-  align-content: center;
 }
 .navbar ul {
   display: flex;
-  flex-direction: row;
   list-style-type: none;
+  flex-direction: row;
+  align-items: center;
 }
 .navbar li {
   padding: 0 10px 0 20px;
@@ -25,8 +31,9 @@ header {
 #hero {
   display: flex;
   background-image: url(images/backgroung_image.jpg);
-  height: 400px;
+  height: 450px;
   width: 100%;
+  object-fit: cover;
 }
 #image {
   display: flex;
@@ -39,7 +46,7 @@ header {
   width: 60%;
 }
 #hero h1 {
-  font-weight: bold;
+  font-weight: 800;
   color: white;
   font-size: 1.6em;
 }
@@ -47,16 +54,23 @@ header {
 /* Main */
 #main {
   text-align: center;
-  margin: 0 20% 0 20%;
+  max-width: 70%;
+  margin: auto;
 }
 #main h3 {
-  padding: 30px 0 4px 0;
+  padding: 30px 0 30px 0;
+}
+#citation {
+  max-width: 70%;
+  display: block;
+  margin: auto;
 }
 #posts {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-# posts div {
+#posts div p {
   margin-left: 20px;
 }
 
@@ -67,7 +81,6 @@ footer {
 }
 #resume {
   font-weight: bold;
-  font-size: 0.8em;
   padding: 20px 0 20px 0;
   text-align: center;
 }
@@ -76,6 +89,10 @@ footer {
   flex-direction: row;
   justify-content: space-around;
   margin: 20px 0 20px 0;
+  width: 50%;
+  margin: auto;
+  opacity: 0.6;
+  font-size: 1.5em;
 }
 #pied {
   display: flex;
@@ -85,4 +102,26 @@ footer {
 }
 #pied h3 {
   text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+  #posts {
+    display: block;
+    margin: auto;
+  }
+  #pied {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  #pied h3 {
+    text-align: center;
+  }
+  li {
+    list-style-type: none;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
 }
