@@ -1,3 +1,88 @@
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700px;
+}
+h2 {
+  text-transform: uppercase;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.navbar li {
+  padding: 0 10px 0 20px;
+}
+
+/* section hero */
+#hero {
+  display: flex;
+  background-image: url(images/backgroung_image.jpg);
+  height: 400px;
+  width: 100%;
+}
+#image {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+#image img {
+  width: 60%;
+}
+#hero h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 1.6em;
+}
+
+/* Main */
+#main {
+  text-align: center;
+  margin: 0 20% 0 20%;
+}
+#main h3 {
+  padding: 30px 0 4px 0;
+}
+#posts {
+  display: flex;
+  flex-direction: row;
+}
+# posts div {
+  margin-left: 20px;
+}
+
+/* footer */
+footer {
+  background-color: rebeccapurple;
+  color: snow;
+}
+#resume {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
+}
+#pied {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+#pied h3 {
+  text-align: left;
 }
